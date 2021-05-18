@@ -151,7 +151,9 @@ GEM
     marcel (0.3.2)
       mimemagic (~> 0.3.2)
     method_source (0.9.0)
-    mimemagic (0.3.2)
+    mimemagic (0.3.10)
+      nokogiri (~> 1)
+      rake
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
@@ -186,7 +188,8 @@ GEM
       i18n (>= 0.5.0)
       railties (>= 3.0.0)
     public_suffix (3.0.2)
-    puma (3.12.0)
+    puma (4.3.8)
+      nio4r (~> 2.0)
     raabro (1.1.6)
     rack (2.0.5)
     rack-cors (1.0.2)
@@ -324,7 +327,7 @@ DEPENDENCIES
   open-uri-s3
   pg
   public_activity
-  puma (~> 3.11)
+  puma (~> 4.3)
   rack-cors
   rails
   rails_12factor
